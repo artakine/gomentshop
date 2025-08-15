@@ -1148,7 +1148,6 @@
                 <li><a href="#home">Ana Sayfa</a></li>
                 <li><a href="#services">Hizmetler</a></li>
                 <li><a href="#workflow">Nasıl Çalışır?</a></li>
-                <li><a href="#portfolio">Portfolyo</a></li>
                 <li><a href="#pricing">Fiyatlar</a></li>
                 <li><a href="#contact">İletişim</a></li>
                 <li><a href="#contact">Kayıt Ol</a></li>
@@ -1265,35 +1264,6 @@
     </section>
 
     
-    <section class="section portfolio" id="portfolio">
-        <div class="container">
-            <h2 class="section-title">Portfolyo</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Logo Tasarımı">
-                    <div class="overlay">
-                        <h3>Cafe Delight</h3>
-                        <p>Restoran için modern logo tasarımı</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Web Sitesi">
-                    <div class="overlay">
-                        <h3>Moda Dünyası</h3>
-                        <p>E-ticaret web sitesi tasarımı</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80" alt="Instagram Yönetimi">
-                    <div class="overlay">
-                        <h3>Fitness Coach</h3>
-                        <p>Instagram büyütme ve yönetimi</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     
     <section class="section pricing" id="pricing">
         <div class="container">
@@ -1469,7 +1439,6 @@
                         <li><a href="#home">Ana Sayfa</a></li>
                         <li><a href="#services">Hizmetler</a></li>
                         <li><a href="#workflow">Nasıl Çalışır?</a></li>
-                        <li><a href="#portfolio">Portfolyo</a></li>
                         <li><a href="#pricing">Fiyatlar</a></li>
                         <li><a href="#contact">İletişim</a></li>
                     </ul>
@@ -1477,9 +1446,9 @@
                 <div class="footer-links">
                     <h3>Hizmetler</h3>
                     <ul>
-                        <li><a href="#">Logo Tasarım</a></li>
-                        <li><a href="#">Web Site Yazılımı</a></li>
-                        <li><a href="#">Instagram Destek</a></li>
+                        <li><a href="#">Script Satış</a></li>
+                        <li><a href="#">Paket Satış</a></li>
+                        <li><a href="#">Anticheat Destek</a></li>
                     </ul>
                 </div>
             </div>
@@ -1614,7 +1583,7 @@
             const formData = new FormData(contactForm);
             const name = formData.get('name');
             const email = formData.get('email');
-            const service = formData.get('service');
+            const service = formData.get('services');
             const message = formData.get('message');
             
             
@@ -1625,7 +1594,7 @@
                     fields: [
                         { name: 'Ad', value: name },
                         { name: 'E-posta', value: email },
-                        { name: 'Hizmet', value: service },
+                        { name: 'Hizmet', value: services },
                         { name: 'Discord İsminiz', value: message }
                     ],
                     timestamp: new Date().toISOString(),
